@@ -21,7 +21,7 @@ public class Food extends FoodBaseEntity{
 
     public Food(String food, int weight, UUID personId, ZonedDateTime datetime) {
         super(personId, datetime);
-        this.food = food;
+        this.food = food.toLowerCase();
         this.weight = weight;
     }
 }

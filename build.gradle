@@ -3,6 +3,11 @@ plugins {
     id 'io.quarkus'
 }
 
+base {
+    group = 'br.com.igorma'
+    archivesName = 'application'
+}
+
 repositories {
     mavenCentral()
     mavenLocal()
@@ -27,9 +32,6 @@ dependencies {
     // Test
     testImplementation 'io.quarkus:quarkus-junit5'
 }
-
-group 'br.com.igorma'
-version '0.0.1'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21
