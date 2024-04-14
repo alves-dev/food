@@ -5,7 +5,7 @@ plugins {
 
 base {
     group = 'br.com.igorma'
-    archivesName = 'application'
+    version '1'
 }
 
 repositories {
@@ -41,6 +41,7 @@ java {
 test {
     systemProperty "java.util.logging.manager", "org.jboss.logmanager.LogManager"
 }
+
 compileJava {
     options.encoding = 'UTF-8'
     options.compilerArgs << '-parameters'
