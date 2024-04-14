@@ -30,7 +30,7 @@ public class RabbitMqListener {
     private final Logger log = LoggerFactory.getLogger(RabbitMqListener.class);
 
     @Transactional
-    @Incoming("nome-da-fila")
+    @Incoming("food")
     public void consumeMessage(byte[] message) {
         String messageString = new String(message);
         try {
