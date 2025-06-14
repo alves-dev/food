@@ -1,0 +1,21 @@
+project:
+  title: &project_title Food
+  description: &project_description Micro serviço para lidar com os eventos referente a alimentação
+  status: &project_status Finalizado # desenvolvimento, Finalizado
+  license: &project_license GPL-3 # GPL-3 MIT
+detail:
+  version: v1
+  description: *project_description
+  website:
+  topics: &topics
+    - java
+    - docker
+head:
+  version: v1
+  title: *project_title
+  description: *project_description
+  status: *project_status
+  topics: *topics
+footer:
+  version: v1
+  license: *project_license
