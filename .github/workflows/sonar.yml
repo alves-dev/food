@@ -9,6 +9,6 @@ jobs:
     if: github.actor != 'readme-generate'
     uses: alves-dev/actions/.github/workflows/sonar.yml@v2
     with:
-      repo-name: ${{ github.repository }}
+      repo-name: ${{ github.event.repository.name }}
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
