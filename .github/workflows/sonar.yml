@@ -1,13 +1,12 @@
-name: Sonar Scanner
+name: "[DEV] Sonar Scanner"
 
 on:
   push:
-    branches: main
+    branches: develop
 
 jobs:
   tasks:
-    if: github.actor != 'readme-generate'
-    uses: alves-dev/actions/.github/workflows/sonar.yml@v1
+    uses: alves-dev/actions/.github/workflows/sonar.yml@latest
     with:
       repo-name: ${{ github.event.repository.name }}
     secrets:
